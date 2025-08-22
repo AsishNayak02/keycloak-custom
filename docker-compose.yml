@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: keycloak
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    ports:
+      - "8080:8080"
+    volumes:
+      # This is the crucial part:
+      # It maps your local './exd' folder to the
+      # '/opt/keycloak/themes/my-awesome-theme' folder inside the container.
+      - ./exd:/opt/keycloak/themes/exd
+    command:
+      - start-dev # Use 'start-dev' to see theme changes without restarting

@@ -1,0 +1,14 @@
+.keycloak__pageheader_brand {
+  /* display: none !important; hide old image */
+  content: url("../img/keycloak-logo-text.png");
+  height: 40px;
+  width: auto;
+  display: inline-block;
+}
+
+.keycloak__pageheader_brand-container::after {
+  content: url("../img/keycloak-logo-text.png");
+  height: 40px;
+  width: auto;
+  display: inline-block;
+}
