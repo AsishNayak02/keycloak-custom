@@ -12,3 +12,32 @@
   width: auto;
   display: inline-block;
 }
+
+/* header styles */
+
+html:not(.pf-v5-theme-dark) body header.pf-v5-c-masthead {
+  background-color: #ffffff !important; 
+  color: #151515 !important;          
+  border-bottom: #151515 1px solid !important;
+}
+
+html:not(.pf-v5-theme-dark) .pf-v5-c-toolbar{
+  background-color: #ffffff !important;
+}
+
+html:not(.pf-v5-theme-dark) body header.pf-v5-c-masthead .pf-v5-c-button,
+html:not(.pf-v5-theme-dark) body header.pf-v5-c-masthead .pf-v5-c-menu-toggle {
+  color: #151515 !important;
+}
+
+/* header styles */
+
+/* side panel */
+
+html:not(.pf-v5-theme-dark) .pf-v5-c-page__sidebar-body{
+  background-color: #ffffff !important ;
+  color: #151515 !important;          
+  border-right: #151515 1px solid !important;
+}
+
+/* side panel */
