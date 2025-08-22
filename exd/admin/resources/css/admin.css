@@ -1,5 +1,8 @@
+:root{
+  --keycloak-light-accent: #1e9df1;
+}
 .keycloak__pageheader_brand {
-  /* display: none !important; hide old image */
+  /* display: none ; hide old image */
   content: url("../img/keycloak-logo-text.png");
   height: 40px;
   width: auto;
@@ -16,18 +19,18 @@
 /* header styles */
 
 html:not(.pf-v5-theme-dark) body header.pf-v5-c-masthead {
-  background-color: #ffffff !important; 
-  color: #151515 !important;          
-  border-bottom: #151515 1px solid !important;
+  background-color: #ffffff ; 
+  color: #151515 ;          
+  border-bottom: #151515 1px solid ;
 }
 
 html:not(.pf-v5-theme-dark) .pf-v5-c-toolbar{
-  background-color: #ffffff !important;
+  background-color: #ffffff ;
 }
 
 html:not(.pf-v5-theme-dark) body header.pf-v5-c-masthead .pf-v5-c-button,
 html:not(.pf-v5-theme-dark) body header.pf-v5-c-masthead .pf-v5-c-menu-toggle {
-  color: #151515 !important;
+  color: #151515 ;
 }
 
 /* header styles */
@@ -35,9 +38,34 @@ html:not(.pf-v5-theme-dark) body header.pf-v5-c-masthead .pf-v5-c-menu-toggle {
 /* side panel */
 
 html:not(.pf-v5-theme-dark) .pf-v5-c-page__sidebar-body{
-  background-color: #ffffff !important ;
-  color: #151515 !important;          
-  border-right: #151515 1px solid !important;
+  background-color: #ffffff  ;
+  color: #151515 ;          
+  border-right: #151515 1px solid ;
+  padding-right: 3%;
+  padding-left: 3%;
 }
 
+
+html:not(.pf-v5-theme-dark) .pf-v5-c-nav__section,
+html:not(.pf-v5-theme-dark) .pf-v5-c-nav__section-title,
+html:not(.pf-v5-theme-dark) .pf-v5-c-nav__link
+ {
+  color: #151515 ;
+  font-weight: 520;
+}
+
+html:not(.pf-v5-theme-dark) .pf-v5-c-nav__link.pf-m-current{
+  background-color: var(--keycloak-light-accent);
+  color: #ffffff;
+ border-radius: 1.3rem;
+}
+html:not(.pf-v5-theme-dark) .pf-v5-c-nav__link:not(.pf-m-current):hover {
+  background-color: var(--keycloak-light-accent);/* A light, transparent blue */
+  color:white; /* The main blue color for the text */
+  border-radius: 1.3rem;
+}
+
+html:not(.pf-v5-theme-dark) .pf-v5-c-nav__link.pf-m-current::after{
+  border: none;
+}
 /* side panel */
