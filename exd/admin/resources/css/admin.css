@@ -33,6 +33,24 @@ html:not(.pf-v5-theme-dark) body header.pf-v5-c-masthead .pf-v5-c-menu-toggle {
   color: #151515 ;
 }
 
+.pf-v5-c-toolbar__item .pf-v5-c-menu-toggle,
+.pf-v5-c-toolbar__item .pf-v5-c-menu-toggle::after,
+.pf-v5-c-toolbar__item .pf-v5-c-menu-toggle::before
+{
+  border-radius: 1.3rem;
+}
+.pf-v5-c-menu-toggle,
+.pf-v5-c-menu-toggle::after,
+.pf-v5-c-menu-toggle::before
+{
+  border: none;
+}
+
+button[data-testid="options-toggle"]{
+  border: 1px solid var(--keycloak-light-accent) ;
+}
+
+
 /* header styles */
 
 /* side panel */
@@ -59,13 +77,22 @@ html:not(.pf-v5-theme-dark) .pf-v5-c-nav__link.pf-m-current{
   color: #ffffff;
  border-radius: 1.3rem;
 }
+
+.pf-v5-c-nav__link.pf-m-current{
+  border-radius: 1.3rem;
+}
+
 html:not(.pf-v5-theme-dark) .pf-v5-c-nav__link:not(.pf-m-current):hover {
   background-color: var(--keycloak-light-accent);/* A light, transparent blue */
   color:white; /* The main blue color for the text */
   border-radius: 1.3rem;
 }
 
-html:not(.pf-v5-theme-dark) .pf-v5-c-nav__link.pf-m-current::after{
+.pf-v5-c-nav__link:not(.pf-m-current):hover{
+  border-radius: 1.3rem;
+}
+
+.pf-v5-c-nav__link.pf-m-current::after{
   border: none;
 }
 /* side panel */
